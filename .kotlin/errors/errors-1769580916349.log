@@ -1,0 +1,166 @@
+kotlin version: 2.2.10
+error message: java.lang.RuntimeException: Exception while generating code for:
+FUN LOCAL_FUNCTION_FOR_LAMBDA name:lambda_1470050260$lambda$10$lambda$9$lambda$8$lambda$7 visibility:private modality:FINAL returnType:kotlin.Unit?
+  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$start index:0 type:kotlin.jvm.internal.Ref.IntRef
+  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$stop index:1 type:kotlin.jvm.internal.Ref.IntRef
+  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$isPressed$delegate index:2 type:androidx.compose.runtime.State<kotlin.Boolean>
+  VALUE_PARAMETER kind:Regular name:$composer index:3 type:androidx.compose.runtime.Composer? [assignable]
+  VALUE_PARAMETER kind:Regular name:$changed index:4 type:kotlin.Int
+  annotations:
+    Composable
+    ComposableTarget(applier = "androidx.compose.ui.UiComposable")
+  BLOCK_BODY
+    CALL 'public final fun sourceInformation (composer: androidx.compose.runtime.Composer, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+      ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in com.pals.audioplayer.ComposableSingletons$MainActivityKt.lambda_1470050260$lambda$10$lambda$9$lambda$8$lambda$7' type=androidx.compose.runtime.Composer? origin=null
+      ARG sourceInformation: CONST String type=kotlin.String value="C:MainActivity.kt#fbkd6a"
+    WHEN type=kotlin.Unit origin=IF
+      BRANCH
+        if: CALL 'public abstract fun shouldExecute (parametersChanged: kotlin.Boolean, flags: kotlin.Int): kotlin.Boolean declared in androidx.compose.runtime.Composer' type=kotlin.Boolean origin=null
+          ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in com.pals.audioplayer.ComposableSingletons$MainActivityKt.lambda_1470050260$lambda$10$lambda$9$lambda$8$lambda$7' type=androidx.compose.runtime.Composer? origin=null
+          ARG parametersChanged: CALL 'public final fun not (): kotlin.Boolean [operator] declared in kotlin.Boolean' type=kotlin.Boolean origin=null
+            ARG <this>: CALL 'public final fun EQEQ (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean declared in kotlin.internal.ir' type=kotlin.Boolean origin=null
+              ARG arg0: CALL 'public final fun and (other: kotlin.Int): kotlin.Int [infix] declared in kotlin.Int' type=kotlin.Int origin=null
+                ARG <this>: GET_VAR '$changed: kotlin.Int declared in com.pals.audioplayer.ComposableSingletons$MainActivityKt.lambda_1470050260$lambda$10$lambda$9$lambda$8$lambda$7' type=kotlin.Int origin=null
+                ARG other: CONST Int type=kotlin.Int value=3
+              ARG arg1: CONST Int type=kotlin.Int value=2
+          ARG flags: CALL 'public final fun and (other: kotlin.Int): kotlin.Int [infix] declared in kotlin.Int' type=kotlin.Int origin=null
+            ARG <this>: GET_VAR '$changed: kotlin.Int declared in com.pals.audioplayer.ComposableSingletons$MainActivityKt.lambda_1470050260$lambda$10$lambda$9$lambda$8$lambda$7' type=kotlin.Int origin=null
+            ARG other: CONST Int type=kotlin.Int value=1
+        then: BLOCK type=kotlin.Unit origin=null
+          WHEN type=kotlin.Unit origin=IF
+            BRANCH
+              if: CALL 'public final fun isTraceInProgress (): kotlin.Boolean declared in androidx.compose.runtime.ComposerKt' type=kotlin.Boolean origin=null
+              then: CALL 'public final fun traceEventStart (key: kotlin.Int, dirty1: kotlin.Int, dirty2: kotlin.Int, info: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                ARG key: CONST Int type=kotlin.Int value=365427176
+                ARG dirty1: GET_VAR '$changed: kotlin.Int declared in com.pals.audioplayer.ComposableSingletons$MainActivityKt.lambda_1470050260$lambda$10$lambda$9$lambda$8$lambda$7' type=kotlin.Int origin=null
+                ARG dirty2: CONST Int type=kotlin.Int value=-1
+                ARG info: CONST String type=kotlin.String value="com.pals.audioplayer.ComposableSingletons$MainActivityKt.lambda$1470050260.<anonymous>.<anonymous>.<anonymous>.<anonymous> (MainActivity.kt:56)"
+          COMPOSITE type=kotlin.Unit origin=null
+            WHEN type=androidx.compose.ui.graphics.painter.Painter origin=IF
+              BRANCH
+                if: CALL 'private final fun lambda_1470050260$lambda$10$lambda$2 ($isPressed$delegate: androidx.compose.runtime.State<kotlin.Boolean>): kotlin.Boolean declared in com.pals.audioplayer.ComposableSingletons$MainActivityKt' type=kotlin.Boolean origin=GET_LOCAL_PROPERTY
+                  ARG $isPressed$delegate: GET_VAR '$isPressed$delegate: androidx.compose.runtime.State<kotlin.Boolean> declared in com.pals.audioplayer.ComposableSingletons$MainActivityKt.lambda_1470050260$lambda$10$lambda$9$lambda$8$lambda$7' type=androidx.compose.runtime.State<kotlin.Boolean> origin=null
+                then: BLOCK type=androidx.compose.ui.graphics.painter.Painter origin=null
+                  BLOCK type=kotlin.Unit origin=null
+                    CALL 'public abstract fun startReplaceGroup (key: kotlin.Int): kotlin.Unit declared in androidx.compose.runtime.Composer' type=kotlin.Unit origin=null
+                      ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in com.pals.audioplayer.ComposableSingletons$MainActivityKt.lambda_1470050260$lambda$10$lambda$9$lambda$8$lambda$7' type=androidx.compose.runtime.Composer? origin=null
+                      ARG key: CONST Int type=kotlin.Int value=-1011800797
+                    CALL 'public final fun sourceInformation (composer: androidx.compose.runtime.Composer, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                      ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in com.pals.audioplayer.ComposableSingletons$MainActivityKt.lambda_1470050260$lambda$10$lambda$9$lambda$8$lambda$7' type=androidx.compose.runtime.Composer? origin=null
+                      ARG sourceInformation: CONST String type=kotlin.String value="56@2047L27"
+                  VAR IR_TEMPORARY_VARIABLE name:tmp0_group type:androidx.compose.ui.graphics.painter.Painter [val]
+                    CALL 'public final fun painterResource (id: kotlin.Int, $composer: androidx.compose.runtime.Composer?, $changed: kotlin.Int): androidx.compose.ui.graphics.painter.Painter declared in androidx.compose.ui.res.PainterResources_androidKt' type=androidx.compose.ui.graphics.painter.Painter origin=null
+                      ARG id: GET_FIELD 'FIELD IR_BUILTINS_STUB name:element type:kotlin.Int visibility:public declared in kotlin.jvm.internal.Ref.IntRef' type=kotlin.Int origin=null
+                        receiver: GET_VAR '$start: kotlin.jvm.internal.Ref.IntRef declared in com.pals.audioplayer.ComposableSingletons$MainActivityKt.lambda_1470050260$lambda$10$lambda$9$lambda$8$lambda$7' type=kotlin.jvm.internal.Ref.IntRef origin=null
+                      ARG $composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in com.pals.audioplayer.ComposableSingletons$MainActivityKt.lambda_1470050260$lambda$10$lambda$9$lambda$8$lambda$7' type=androidx.compose.runtime.Composer? origin=null
+                      ARG $changed: CONST Int type=kotlin.Int value=0
+                  CALL 'public abstract fun endReplaceGroup (): kotlin.Unit declared in androidx.compose.runtime.Composer' type=kotlin.Unit origin=null
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in com.pals.audioplayer.ComposableSingletons$MainActivityKt.lambda_1470050260$lambda$10$lambda$9$lambda$8$lambda$7' type=androidx.compose.runtime.Composer? origin=null
+                  GET_VAR 'val tmp0_group: androidx.compose.ui.graphics.painter.Painter [val] declared in com.pals.audioplayer.ComposableSingletons$MainActivityKt.lambda_1470050260$lambda$10$lambda$9$lambda$8$lambda$7' type=androidx.compose.ui.graphics.painter.Painter origin=null
+              BRANCH
+                if: CONST Boolean type=kotlin.Boolean value=true
+                then: BLOCK type=androidx.compose.ui.graphics.painter.Painter origin=null
+                  BLOCK type=kotlin.Unit origin=null
+                    CALL 'public abstract fun startReplaceGroup (key: kotlin.Int): kotlin.Unit declared in androidx.compose.runtime.Composer' type=kotlin.Unit origin=null
+                      ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in com.pals.audioplayer.ComposableSingletons$MainActivityKt.lambda_1470050260$lambda$10$lambda$9$lambda$8$lambda$7' type=androidx.compose.runtime.Composer? origin=null
+                      ARG key: CONST Int type=kotlin.Int value=-1011799742
+                    CALL 'public final fun sourceInformation (composer: androidx.compose.runtime.Composer, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                      ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in com.pals.audioplayer.ComposableSingletons$MainActivityKt.lambda_1470050260$lambda$10$lambda$9$lambda$8$lambda$7' type=androidx.compose.runtime.Composer? origin=null
+                      ARG sourceInformation: CONST String type=kotlin.String value="56@2080L26"
+                  VAR IR_TEMPORARY_VARIABLE name:tmp1_group type:androidx.compose.ui.graphics.painter.Painter [val]
+                    CALL 'public final fun painterResource (id: kotlin.Int, $composer: androidx.compose.runtime.Composer?, $changed: kotlin.Int): androidx.compose.ui.graphics.painter.Painter declared in androidx.compose.ui.res.PainterResources_androidKt' type=androidx.compose.ui.graphics.painter.Painter origin=null
+                      ARG id: GET_FIELD 'FIELD IR_BUILTINS_STUB name:element type:kotlin.Int visibility:public declared in kotlin.jvm.internal.Ref.IntRef' type=kotlin.Int origin=null
+                        receiver: GET_VAR '$stop: kotlin.jvm.internal.Ref.IntRef declared in com.pals.audioplayer.ComposableSingletons$MainActivityKt.lambda_1470050260$lambda$10$lambda$9$lambda$8$lambda$7' type=kotlin.jvm.internal.Ref.IntRef origin=null
+                      ARG $composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in com.pals.audioplayer.ComposableSingletons$MainActivityKt.lambda_1470050260$lambda$10$lambda$9$lambda$8$lambda$7' type=androidx.compose.runtime.Composer? origin=null
+                      ARG $changed: CONST Int type=kotlin.Int value=0
+                  CALL 'public abstract fun endReplaceGroup (): kotlin.Unit declared in androidx.compose.runtime.Composer' type=kotlin.Unit origin=null
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in com.pals.audioplayer.ComposableSingletons$MainActivityKt.lambda_1470050260$lambda$10$lambda$9$lambda$8$lambda$7' type=androidx.compose.runtime.Composer? origin=null
+                  GET_VAR 'val tmp1_group: androidx.compose.ui.graphics.painter.Painter [val] declared in com.pals.audioplayer.ComposableSingletons$MainActivityKt.lambda_1470050260$lambda$10$lambda$9$lambda$8$lambda$7' type=androidx.compose.ui.graphics.painter.Painter origin=null
+            COMPOSITE type=kotlin.Unit origin=null
+          SET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:contentDescription type:kotlin.Int visibility:public [final,static] declared in android.R.attr' type=kotlin.Unit superQualifierSymbol=android.R.attr origin=EQ
+            value: CONST Int type=kotlin.Int value=16843379
+          WHEN type=kotlin.Unit origin=IF
+            BRANCH
+              if: CALL 'public final fun isTraceInProgress (): kotlin.Boolean declared in androidx.compose.runtime.ComposerKt' type=kotlin.Boolean origin=null
+              then: CALL 'public final fun traceEventEnd (): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+      BRANCH
+        if: CONST Boolean type=kotlin.Boolean value=true
+        then: CALL 'public abstract fun skipToGroupEnd (): kotlin.Unit declared in androidx.compose.runtime.Composer' type=kotlin.Unit origin=null
+          ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in com.pals.audioplayer.ComposableSingletons$MainActivityKt.lambda_1470050260$lambda$10$lambda$9$lambda$8$lambda$7' type=androidx.compose.runtime.Composer? origin=null
+
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:50)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate$default(FunctionCodegen.kt:43)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethodNode(ClassCodegen.kt:422)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethod(ClassCodegen.kt:439)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generate(ClassCodegen.kt:164)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.generateFile(JvmIrCodegenFactory.kt:419)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.invokeCodegen(JvmIrCodegenFactory.kt:388)
+	at org.jetbrains.kotlin.cli.jvm.compiler.KotlinToJVMBytecodeCompiler.runCodegen$cli(KotlinToJVMBytecodeCompiler.kt:431)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:95)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:36)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:29)
+	at org.jetbrains.kotlin.cli.pipeline.PipelinePhase.phaseBody(PipelinePhase.kt:68)
+	at org.jetbrains.kotlin.cli.pipeline.PipelinePhase.phaseBody(PipelinePhase.kt:58)
+	at org.jetbrains.kotlin.config.phaser.NamedCompilerPhase.invoke(CompilerPhase.kt:102)
+	at org.jetbrains.kotlin.backend.common.phaser.CompositePhase.invoke(PhaseBuilders.kt:22)
+	at org.jetbrains.kotlin.config.phaser.CompilerPhaseKt.invokeToplevel(CompilerPhase.kt:53)
+	at org.jetbrains.kotlin.cli.pipeline.AbstractCliPipeline.runPhasedPipeline(AbstractCliPipeline.kt:109)
+	at org.jetbrains.kotlin.cli.pipeline.AbstractCliPipeline.execute(AbstractCliPipeline.kt:68)
+	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecutePhased(K2JVMCompiler.kt:78)
+	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecutePhased(K2JVMCompiler.kt:44)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.execImpl(CLICompiler.kt:90)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.exec(CLICompiler.kt:352)
+	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunnerBase.runCompiler(IncrementalJvmCompilerRunnerBase.kt:175)
+	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunnerBase.runCompiler(IncrementalJvmCompilerRunnerBase.kt:38)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.doCompile(IncrementalCompilerRunner.kt:504)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compileImpl(IncrementalCompilerRunner.kt:421)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.tryCompileIncrementally$lambda$10$compile(IncrementalCompilerRunner.kt:254)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.tryCompileIncrementally(IncrementalCompilerRunner.kt:272)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compile(IncrementalCompilerRunner.kt:124)
+	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.execIncrementalCompiler(CompileServiceImpl.kt:679)
+	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.access$execIncrementalCompiler(CompileServiceImpl.kt:93)
+	at org.jetbrains.kotlin.daemon.CompileServiceImpl.compile(CompileServiceImpl.kt:1806)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.AssertionError: access of const val: SET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:contentDescription type:kotlin.Int visibility:public [final,static] declared in android.R.attr' type=kotlin.Unit superQualifierSymbol=android.R.attr origin=EQ
+  value: CONST Int type=kotlin.Int value=16843379
+
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitFieldAccess(ExpressionCodegen.kt:807)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitFieldAccess(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.visitors.IrVisitor.visitSetField(IrVisitor.kt:215)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitSetField(ExpressionCodegen.kt:858)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitSetField(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrSetField.accept(IrSetField.kt:21)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:527)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:541)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.visitors.IrVisitor.visitBlock(IrVisitor.kt:122)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:413)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrBlock.accept(IrBlock.kt:18)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitWhen(ExpressionCodegen.kt:1049)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitWhen(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrWhen.accept(IrWhen.kt:24)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:527)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:532)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrBlockBody.accept(IrBlockBody.kt:20)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.generate(ExpressionCodegen.kt:233)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.doGenerate(FunctionCodegen.kt:126)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:47)
+	... 46 more
+
+
